@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <div id="logo"><img src="logo-removebg-preview.png" alt="No logo"></div>
+            <div id="explore">
+                <h3 id="dynamic-text" class="hidden"><b>Explore Visual Beauty</b></h3>
+            </div>
+            <button id="back-button">Home</button>
+            <button class="category-button" data-category="Nature"> <b>Nature</b></button>
+            <button class="category-button" data-category="Vehicle"><b>Vehicle</b></button>
+            <button class="category-button" data-category="Windows"><b>Windows</b></button>
+            <button class="category-button" data-category="Animals"><b>Animals</b></button>
+            <button class="category-button" data-category="Motivational"><b>Motivational</b></button>
+            <div id="box2">
+                <input type="search" name="" id="Search" placeholder="search here....">
+                <p> . </p>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="gallery">
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="coffee-laptop-7680x4320-13640.png" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Programming with Coffee</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="white-fur-kitten-5120x2880-16431.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Beautiful eyes White kitten </b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="windows-11-dark-mode-abstract-background-black-background-3840x2160-8710.jpg"
+                    alt="Category Image 5" onclick="showImageModal(this)">
+                <div class="description"><b> Window 11 Dark Mode</b></div>
+            </div>
+            </b>
+
+
+            <div class="gallery-item" data-category="Motivational">
+                <img src="MadeOwn.png" alt="Animal Image 1" onclick="showImageModal(this)">
+                <div class="description"><b> Everything can be posible with struggle</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="sakura-aesthetic-3840x2160-15408.jpg" alt="Category Image 4" onclick="showImageModal(this)">
+                <div class="description"><b> white and perple natral beauty</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="google-logo-typography-night-crescent-moon-half-moon-5k-8k-8001x4501-4562.png"
+                    alt="Architecture Image 1" onclick="showImageModal(this)">
+                <div class="description"><b> Google photo</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="samsung-galaxy-3840x2160-16767.png" alt="Category Image 5" onclick="showImageModal(this)">
+                <div class="description"><b> samsung-galaxy</b></div>
+            </div>
+
+
+
+            <div class="gallery-item" data-category="Motivational">
+                <img src="dont-fucking-procrastinate.jpg" alt="Category Image 2" onclick="showImageModal(this)">
+                <div class="description"><b> Don't procrastinate. If there's any problem let me know</b></div>
+            </div>
+
+
+
+
+
+            <div class="gallery-item" data-category="Motivational">
+                <img src="sung-jinwoo-8k-7680x4320-14673.jpg" alt="Category Image 5" onclick="showImageModal(this)">
+                <div class="description"><b> Attitude Boy</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="windows-server-2025-3840x2160-15386.jpg" alt="Category Image 5"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Windows Server </b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Vehicle">
+                <img src="bmw-art-car-8k-bmw-3840x2160-16789.jpg" alt="Category Image 5" onclick="showImageModal(this)">
+                <div class="description"><b> BMW Art Car</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Animals">
+                <img src="wolf-crown-king-smoke-3840x2160-16766 (1).jpg" alt="Category Image 5"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Wolf Crown king</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="spring-magical-3840x2160-16778 (1).jpg" alt="Category Image 5" onclick="showImageModal(this)">
+                <div class="description"><b> Spring Magical Beauty</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Vehicle">
+                <img src="lamborghini-huracan-3840x2160-16571.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"> <b>Lamborghini Car</b></b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="anime-girl-dream-3840x2160-10024.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dreams comes true</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Vehicle">
+                <img src="biker-with-gears-on-4k-fs.jpg" alt="Nature Image 1" onclick="showImageModal(this)">
+                <div class="description"><b> Heavy Bike</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="born-to-code-3840x2160-10608.png" alt="Category Image 1" onclick="showImageModal(this)">
+                <div class="description"><b> Born to Code.</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Vehicle">
+                <img src="mercedes-benz-amg-3840x2160-16850.jpg" alt="Category Image 5" onclick="showImageModal(this)">
+                <div class="description"><b> Mercedes Car</b></div>
+            </div>
+
+
+
+
+
+
+            <div class="gallery-item" data-category="Animals">
+                <img src="hummingbird-branch-3840x2160-11691.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Beautiful hummingbird bird</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Motivational">
+                <img src="mike-tyson-popular-3840x2160-15500.jpg" Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Programming with Coffee</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Animals">
+                <img src="cute-bird-blue-3840x2160-11645 (1).jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Beautiful Bird </b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="calla-lily-3840x2160-12101.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Water Liliy</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="dandelion-flower-3840x2160-11976.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Flowers colured the colouless world</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Vehicle">
+                <img src="gmc-hummer-ev-8k-ev-3840x2160-16849.jpg" alt="Category Image 5"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> gmc hummer EV Truck</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Motivational">
+                <img src="follow-your-dreams-3840x2160-14754.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dreams Quotes</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Animals">
+                <img src="cheetah-cheetah-cub-3840x2160-11410.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Leopard with Baby</b></div>
+            </div>
+
+
+
+            <div class="gallery-item" data-category="Motivational">
+                <img src="positivity-quotes-3840x2160-13476.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Think positive be positive</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Animals">
+                <img src="cute-puppy-running-3840x2160-13236.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Cute Pet Dog</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Motivational">
+                <img src="lucy-maclean-ella-3840x2160-16805.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Military girl Anime</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Animals">
+                <img src="arctic-wolf-cgi-predator-digital-art-3600x2250-8681.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Wolf Predator</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="windows-7-official-3840x2160-13944.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Windows 7 Official</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Vehicle">
+                <img src="audi-rs-q-e-tron-electric-cars-off-road-suv-concept-cars-3840x2160-6145.jpeg"
+                    alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Audi Tron Electric Car</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Motivational">
+                <img src="sung-jinwoo-8k-7680x4320-14673.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Attitude Anime</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="color-burst-purple-3840x2160-16239.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Beautiful Rainbow colours</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Nature">
+                <img src="cute-girl-dreamy-3840x2160-12879.png" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dreamy Girl</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="dark-background-abstract-background-network-3d-background-7680x4320-8324.png"
+                    alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+
+
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="anonymous-3840x2743-13656.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="anonymous-7680x4320-13681.png" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="anonymous-hacker-5k-5120x2880-15748.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="anonymous-hacker-laptop-black-background-5k-5087x3252-159.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="bad-boys-ride-or-7680x4320-16281.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="dabi-minimalist-my-5120x2880-10302.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="Hacker pic.jpg" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="man-error-glitch-dark-night-5k-5778x3626-2586.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="man-error-glitch-dark-night-5k-5778x3626-2586.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="man-led-mask-anonymous-dark-background-3904x5856-6316 copy.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="man-led-mask-dope-night-anonymous-hoodie-dark-5k-5999x3999-1872.jpg" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="Man.png" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="muhammad-ali-boxer-7680x4320-11119.png" alt="Category Image 3" onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="the-mandalorian-baby-yoda-the-child-season-2-black-3840x2560-2805.png" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+            <div class="gallery-item" data-category="Windows">
+                <img src="the-mandalorian-baby-yoda-the-child-season-2-black-3840x2560-2805.png" alt="Category Image 3"
+                    onclick="showImageModal(this)">
+                <div class="description"><b> Dark mode Abstract</b></div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <div id="imageDetails">
+                <img class="modal-image" id="fullImage">
+                <p class="description" id="imageDescription"></p>
+            </div>
+
+
+
+            <div class="modal-buttons">
+                <a id="downloadLink" href="#" download>Download</a>
+                <button id="closeModalButton">Back</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Reach out to me  -->
+
+    <div class="reachMine">
+        <h1 id="reachMe">Reach out to Me</h1>
+        <span>For inquiries, collaboration opportunities, or to discuss any programming-related matter, please feel free
+            to
+            reach out.
+            I'm here to engage in meaningful conversations and contribute my expertise
+        </span>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <div id="bigcontainer">
+        <div class="row">
+            <div class="contact-info" data-sr-id="11">
+                <h1>Contact Us <i class="uil uil-corner-right-down"></i></h1>
+                <p><i class="uil uil-envelope"></i>rimsharamzanbrw08@gmail.com</p>
+                <p><i class="uil uil-phone"></i> +92 337 7534199</p>
+            </div>
+        </div>
+
+
+        <div class="form-control">
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSfVfeDt3LKCiy5e4BAWApi9Q3HavinuV8ruRy1hPgdjTo6zZQ/formResponse"
+                method="POST">
+                <div class="form-inputs">
+                    <input type="text" name="entry.1635303240" class="input-field" placeholder="Name" required>
+                    <input type="email" name="entry.364253403" class="input-field" placeholder="Email" required>
+                </div>
+                <div class="text-area">
+                    <textarea name="entry.1587398558" placeholder="Message" required></textarea>
+                </div>
+                <div class="form-button">
+                    <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <!-- footer seaction  -->
+
+    </footer>
+    <footer class="footer">
+        <div class="footer-content">
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-section about">
+                        <h1>Rimsha Ramzan</h1>
+                        <div class="contact">
+                            <p><strong>Address:</strong> Shah faiz colony, Burewala, pakistan</p>
+                            <p><strong>Contact Us:</strong> +92 337 876543</p>
+                            <p><strong>Email:</strong> rimsharamzanbrw08@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-section social-links">
+                        <div><a href="https://www.facebook.com/profile.php?id=61552282109872" class="social-link"><i
+                                    class="fa-brands fa-facebook"></i></a></div>
+                        <div><a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a></div>
+                        <div><a href="https://www.instagram.com/chsalman199/" class="social-link"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
+                        <div><a href="https://www.linkedin.com/in/muhammad-salman-b04905284/" class="social-link"><i
+                                    class="fa-brands fa-linkedin"></i></a></div>
+                        <div><a href="https://wa.me//+923377534199" class="social-link"><i
+                                    class="fa-brands fa-whatsapp"></i></a></a></div>
+                        <div><a href="https://youtube.com/" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div><a href="https://github.com/RimshaRamzanDev" class="social-link"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <div>
+                            </div>
+
+
+                        </div>
+                        <br>
+                        <br>
+            </footer>
+            <p>&copy; 2024 <b>Rimsha Ramzan</b> . All rights reserved</p>
+
+            <script src="script.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+</body>
+
+</html>
